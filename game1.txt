@@ -1,0 +1,17 @@
+
+import random
+
+
+while True:
+    choice=input('roll dice: (y/n: ) ').lower()
+#lower will take upper or lower case y/n at the output
+    if choice=='y':
+        dice1=random.randint(1,9)
+        dice2=random.randint(1,9)
+        print(f'({dice1},{dice2})')
+
+    elif choice=='n':
+        print('Try again ')
+    else:
+        print('invalid input')
+        break
